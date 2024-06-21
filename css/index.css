@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,10 +14,36 @@ body {
 }
 
 h1 {
-  
   font-size: 64px;
   margin: 500px 0 0 0;
   text-align: center;
+}
+
+.shiny-effect {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, white 0%, cyan 50%, white 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  50% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: 200%;
+  }
 }
 
 /* NAVBAR */
@@ -116,6 +144,7 @@ nav ul li a:hover {
   padding: 8rem;
   font-size: 4rem;
   color: white;
+  margin-bottom: 200px;
 }
 
 /* TABLET SIZE */

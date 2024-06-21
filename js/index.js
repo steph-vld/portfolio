@@ -28,6 +28,11 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const headerBg = document.querySelector('.header-bg');
+  headerBg.classList.add('fade-in-animation');
+});
 function toggleMenu() {
   const navLinks = document.getElementById("nav-links");
   navLinks.classList.toggle("show");
