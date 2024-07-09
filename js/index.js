@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".menu-icon");
+  const navUl = document.querySelector("nav ul");
+
+  menuIcon.addEventListener("click", function () {
+    navUl.classList.toggle("active");
+  });
+});
+
 let selection = Splitting();
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,32 +37,29 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
-
-
 function toggleMenu() {
   const navLinks = document.getElementById("nav-links");
   navLinks.classList.toggle("show");
 }
 
-particlesJS('particles-js', {
+particlesJS("particles-js", {
   particles: {
     number: {
       value: 180,
       density: {
         enable: true,
-        value_area: 900
-      }
+        value_area: 900,
+      },
     },
     color: {
-      value: '#00ffff'
+      value: "#00ffff",
     },
     shape: {
-      type: 'circle',
+      type: "circle",
       stroke: {
         width: 0,
-        color: '#ffff'
-      }
-     
+        color: "#ffff",
+      },
     },
     opacity: {
       value: 1,
@@ -62,8 +68,8 @@ particlesJS('particles-js', {
         enable: false,
         speed: 1,
         opacity_min: 0.1,
-        sync: false
-      }
+        sync: false,
+      },
     },
     size: {
       value: 7,
@@ -72,69 +78,69 @@ particlesJS('particles-js', {
         enable: true,
         speed: 40,
         size_min: 0.1,
-        sync: true
-      }
+        sync: true,
+      },
     },
     line_linked: {
       enable: false,
       distance: 150,
-      color: '#ffffff',
+      color: "#ffffff",
       opacity: 0.2,
-      width: 1
+      width: 1,
     },
     move: {
       enable: true,
       speed: 4,
-      direction: 'none',
+      direction: "none",
       random: false,
       straight: false,
-      out_mode: 'out',
+      out_mode: "out",
       bounce: false,
       attract: {
         enable: false,
         rotateX: 600,
-        rotateY: 1200
-      }
-    }
+        rotateY: 1200,
+      },
+    },
   },
   interactivity: {
-    detect_on: 'canvas',
+    detect_on: "canvas",
     events: {
       onhover: {
         enable: true,
-        mode: "repulse"
+        mode: "repulse",
       },
       onclick: {
         enable: true,
-        mode: 'push'
+        mode: "push",
       },
-      resize: true
+      resize: true,
     },
     modes: {
       grab: {
         distance: 400,
         line_linked: {
-          opacity: 1
-        }
+          opacity: 1,
+        },
       },
       bubble: {
         distance: 400,
         size: 40,
         duration: 2,
         opacity: 8,
-        speed: 3
+        speed: 3,
       },
       repulse: {
         distance: 200,
-        duration: 0.4
+        duration: 0.4,
       },
       push: {
-        particles_nb: 4
+        particles_nb: 4,
       },
       remove: {
-        particles_nb: 2
-      }
-    }
+        particles_nb: 2,
+      },
+    },
   },
-  retina_detect: true
+  retina_detect: true,
 });

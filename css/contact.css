@@ -13,6 +13,29 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.go-back {
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  background-color: #010007;
+  color: #08f1f9;
+  text-decoration: none; /* Remove underline */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(125, 238, 253, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.go-back:hover {
+  background-color: #08f1f9;
+  color: white;
+  box-shadow: 0 0 15px 5px rgba(114, 250, 250, 0.7);
+  transform: scale(1.05);
+}
+
 h1 {
   font-size: 60px;
   margin: 500px 0 0 0;
