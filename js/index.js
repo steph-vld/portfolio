@@ -45,7 +45,7 @@ function toggleMenu() {
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 180,
+      value: 100,
       density: {
         enable: true,
         value_area: 900,
@@ -90,7 +90,7 @@ particlesJS("particles-js", {
     },
     move: {
       enable: true,
-      speed: 4,
+      speed: 2,
       direction: "none",
       random: false,
       straight: false,
